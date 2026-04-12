@@ -76,7 +76,7 @@ ul {
     letter-spacing: -1px;
     margin: 0;
     line-height: 1;
-    white-space: nowrap; /* Evita que el nombre baje */
+    white-space: nowrap; 
 }
 
 .nav-logo span {
@@ -84,10 +84,10 @@ ul {
 }
 
 .floating-logo {
-    width: 65px; /* Tamaño ideal para estar a la par */
+    width: 65px; 
     height: 65px;
     object-fit: contain;
-    flex-shrink: 0; /* Evita que se aplaste */
+    flex-shrink: 0; 
     filter: drop-shadow(0 5px 10px rgba(61, 14, 97, 0.15));
 }
 
@@ -235,21 +235,19 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 !important; /* Quitamos padding para que el círculo mande */
-}
+    padding: 0 !important; 
 
 .nav-avatar {
-    width: 35px;          /* Tamaño discreto y elegante */
+    width: 35px;        
     height: 35px;
-    border-radius: 50%;   /* Lo hace circular */
-    object-fit: cover;    /* Evita que la foto del usuario se deforme */
-    border: 2px solid var(--clr-accent); /* Borde con tu violeta claro */
+    border-radius: 50%;  
+    object-fit: cover;    
+    border: 2px solid var(--clr-accent); 
     transition: var(--transition);
 }
 
 .nav-avatar:hover {
-    border-color: var(--clr-main); /* Cambia al violeta fuerte al pasar el mouse */
-    transform: scale(1.1);
+    border-color: var(--clr-main);
 }
 
 /* Ajuste para que en móvil no se vea gigante */
@@ -257,6 +255,65 @@ ul {
     .nav-avatar {
         width: 40px;
         height: 40px;
-        margin-left: 10px; /* Alineado con el texto del menú lateral */
+        margin-left: 10px; 
+    }
+}
+
+
+
+/* --- SECCIÓN DE BÚSQUEDA --- */
+.nav-search {
+    flex: 1;               
+    max-width: 400px;      
+    margin: 0 2rem;        
+}
+
+.nav-search form {
+    display: flex;
+    background-color: var(--clr-bg);
+    border-radius: var(--radius);
+    padding: 5px 15px;
+    border: 1px solid rgba(61, 61, 193, 0.1);
+    transition: var(--transition);
+}
+
+.nav-search form:focus-within {
+    border-color: var(--clr-main);
+    box-shadow: 0 0 8px rgba(97, 61, 193, 0.2);
+}
+
+.nav-search input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 8px;
+    font-family: inherit;
+    color: var(--clr-dark);
+    outline: none;
+}
+
+.nav-search button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.nav-search button:hover {
+    transform: scale(1.2);
+}
+
+/* --- AJUSTE RESPONSIVE --- */
+@media (max-width: 992px) {
+    .nav-search {
+        margin: 0 1rem;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-search {
+        display: none; 
     }
 }
