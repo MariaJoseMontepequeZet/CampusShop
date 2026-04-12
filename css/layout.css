@@ -279,3 +279,79 @@ ul {
         background-color: var(--clr-white);
     }
 }
+
+
+
+/* --- SECCIÓN DE CATEGORÍAS --- */
+.categories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5000rem;
+    padding: 2.0000rem 1.0000rem;
+    background-color: var(--clr-white);
+    margin-bottom: 1.0000rem;
+    overflow-x: auto;
+    /* Permite scroll horizontal en móviles */
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8000rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.category-icon {
+    width: 70.0000px;
+    height: 70.0000px;
+    background-color: var(--clr-bg);
+    border-radius: 50.0000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8000rem;
+    border: 2.0000px solid transparent;
+    transition: var(--transition);
+    box-shadow: 0 4.0000px 10.0000px rgba(61, 14, 97, 0.0500);
+}
+
+.category-item span {
+    font-size: 0.9000rem;
+    font-weight: 600;
+    color: var(--clr-dark);
+}
+
+/* Efectos al pasar el mouse */
+.category-item:hover .category-icon {
+    background-color: var(--clr-white);
+    border-color: var(--clr-main);
+    transform: translateY(-5.0000px);
+    box-shadow: 0 8.0000px 20.0000px rgba(97, 61, 193, 0.1500);
+}
+
+.category-item:hover span {
+    color: var(--clr-main);
+}
+
+/* Ocultar barra de scroll estética en navegadores */
+.categories-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ajuste móvil */
+@media (max-width: 768.0000px) {
+    .categories-container {
+        justify-content: flex-start;
+        gap: 1.5000rem;
+        padding: 1.5000rem;
+    }
+
+    .category-icon {
+        width: 60.0000px;
+        height: 60.0000px;
+        font-size: 1.5000rem;
+    }
+}
