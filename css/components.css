@@ -151,10 +151,6 @@ ul {
     color: var(--clr-main);
 }
 
-.nav-links a.active {
-    color: var(--clr-main);
-}
-
 /* --- ICONOS Y BADGE --- */
 .nav-icon-btn {
     display: flex;
