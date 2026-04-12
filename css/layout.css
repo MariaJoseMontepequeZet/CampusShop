@@ -151,9 +151,6 @@ ul {
     color: var(--clr-main);
 }
 
-.nav-links a.active {
-    color: var(--clr-main);
-}
 
 /* --- ICONOS Y BADGE --- */
 .nav-icon-btn {
@@ -282,6 +279,8 @@ ul {
 
 
 
+
+
 /* --- SECCIÓN DE CATEGORÍAS --- */
 .categories-container {
     display: flex;
@@ -292,7 +291,6 @@ ul {
     background-color: var(--clr-white);
     margin-bottom: 1.0000rem;
     overflow-x: auto;
-    /* Permite scroll horizontal en móviles */
 }
 
 .category-item {
