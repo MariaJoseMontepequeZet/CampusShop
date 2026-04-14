@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -85,35 +85,63 @@
     <section class="featured-products">
         <h2 class="section-title">Catálogo <span>General</span></h2>
 
+        <div class="filter-container" style="text-align: center; margin-bottom: 30px;">
+            <a href="#" class="filter-btn active"
+                style="padding: 10px 20px; text-decoration: none; border: 1px solid #613dc1; border-radius: 20px; margin: 5px; display: inline-block;">Todos</a>
+            <a href="#" class="filter-btn"
+                style="padding: 10px 20px; text-decoration: none; border: 1px solid #ddd; border-radius: 20px; margin: 5px; display: inline-block;">Camisetas</a>
+            <a href="#" class="filter-btn"
+                style="padding: 10px 20px; text-decoration: none; border: 1px solid #ddd; border-radius: 20px; margin: 5px; display: inline-block;">Pantalones</a>
+            <a href="#" class="filter-btn"
+                style="padding: 10px 20px; text-decoration: none; border: 1px solid #ddd; border-radius: 20px; margin: 5px; display: inline-block;">Accesorios</a>
+        </div>
+
         <div class="products-grid-general">
 
             <div class="product-card">
-                <div class="product-image"><img src="imagenes/camiseta.png" alt="C1"><span
-                        class="product-tag">Camisetas</span></div>
+                <div class="product-image">
+                    <img src="imagenes/camiseta.png" alt="S1">
+                    <span class="product-tag">Camisetas</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Camiseta Essential Fit</h3>
                     <p class="product-price">Q125.00</p><button class="btn-add">Agregar al Carrito</button>
                 </div>
             </div>
             <div class="product-card">
-                <div class="product-image"><img src="imagenes/camisetav.png" alt="C2"><span
-                        class="product-tag">Camisetas</span></div>
+                <div class="product-image">
+                    <img src="imagenes/camisetav.png" alt="C2">
+                    <span class="product-tag">Camisetas</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Camiseta V-Neck Classic</h3>
                     <p class="product-price">Q110.00</p><button class="btn-add">Agregar al Carrito</button>
                 </div>
             </div>
             <div class="product-card">
-                <div class="product-image"><img src="imagenes/camiseta-oversize.png" alt="C3"><span
-                        class="product-tag">Camisetas</span></div>
+                <div class="product-image">
+                    <img src="imagenes/camiseta-oversize.png" alt="C3">
+                    <span class="product-tag">Camisetas</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Camiseta Oversize Urban</h3>
                     <p class="product-price">Q145.00</p><button class="btn-add">Agregar al Carrito</button>
                 </div>
             </div>
             <div class="product-card">
-                <div class="product-image"><img src="imagenes/camiseta-polo.png" alt="C4"><span
-                        class="product-tag">Camisetas</span></div>
+                <div class="product-image">
+                    <img src="imagenes/camiseta-polo.png" alt="C4">
+                    <span class="product-tag">Camisetas</span>
+                </div>
                 <div class="product-info">
                     <h3>Polo Premium Campus</h3>
                     <p class="product-price">Q160.00</p><button class="btn-add">Agregar al Carrito</button>
@@ -161,7 +189,11 @@
             </div>
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/camiseta-unisex.png" alt="C10"><span
-                        class="product-tag">Camisetas</span></div>
+                        class="product-tag">Camisetas</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Camiseta Unisex Comfort</h3>
                     <p class="product-price">Q120.00</p><button class="btn-add">Agregar al Carrito</button>
@@ -170,7 +202,11 @@
 
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/jeans.png" alt="P1"><span
-                        class="product-tag">Pantalones</span></div>
+                        class="product-tag">Pantalones</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Jeans Denim Indigo</h3>
                     <p class="product-price">Q250.00</p><button class="btn-add">Agregar al Carrito</button>
@@ -194,7 +230,11 @@
             </div>
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/cargo-black.png" alt="P4"><span
-                        class="product-tag">Pantalones</span></div>
+                        class="product-tag">Pantalones</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Pantalón Cargo Tactical</h3>
                     <p class="product-price">Q275.00</p><button class="btn-add">Agregar al Carrito</button>
@@ -210,7 +250,11 @@
             </div>
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/pantalon-formal.png" alt="P6"><span
-                        class="product-tag">Pantalones</span></div>
+                        class="product-tag">Pantalones</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Pantalón Formal Slim Fit</h3>
                     <p class="product-price">Q310.00</p><button class="btn-add">Agregar al Carrito</button>
@@ -226,7 +270,11 @@
             </div>
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/pantalon-lino.png" alt="P8"><span
-                        class="product-tag">Pantalones</span></div>
+                        class="product-tag">Pantalones</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Pantalón de Lino Fresh</h3>
                     <p class="product-price">Q240.00</p><button class="btn-add">Agregar al Carrito</button>
@@ -234,7 +282,11 @@
             </div>
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/jogger-sport.png" alt="P9"><span
-                        class="product-tag">Pantalones</span></div>
+                        class="product-tag">Pantalones</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Jogger Sport Performance</h3>
                     <p class="product-price">Q195.00</p><button class="btn-add">Agregar al Carrito</button>
@@ -307,7 +359,11 @@
             </div>
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/vestido-knit.png" alt="V8"><span
-                        class="product-tag">Vestidos</span></div>
+                        class="product-tag">Vestidos</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Vestido Knit Soft</h3>
                     <p class="product-price">Q245.00</p><button class="btn-add">Agregar al Carrito</button>
@@ -323,7 +379,11 @@
             </div>
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/vestido-lbd.png" alt="V10"><span
-                        class="product-tag">Vestidos</span></div>
+                        class="product-tag">Vestidos</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Classic Little Black Dress</h3>
                     <p class="product-price">Q165.00</p><button class="btn-add">Agregar al Carrito</button>
@@ -445,7 +505,11 @@
             </div>
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/mocasines.png" alt="Z5"><span
-                        class="product-tag">Zapatos</span></div>
+                        class="product-tag">Zapatos</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Mocasines Brown</h3>
                     <p class="product-price">Q390.00</p><button class="btn-add">Agregar</button>
@@ -510,7 +574,11 @@
             </div>
             <div class="product-card">
                 <div class="product-image"><img src="imagenes/lentes-sol.png" alt="A3"><span
-                        class="product-tag">Accesorios</span></div>
+                        class="product-tag">Accesorios</span>
+                    <span class="product-tag-promo"
+                        style="position: absolute; top: 10px; right: 10px; background: #ff4757; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.8000rem;">-20%
+                        OFF</span>
+                </div>
                 <div class="product-info">
                     <h3>Lentes Retro Vision</h3>
                     <p class="product-price">Q180.00</p><button class="btn-add">Agregar</button>
