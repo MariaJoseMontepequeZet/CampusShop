@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Catálogo Completo</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        /* Cuadrícula solicitada: 5 columnas */
+        .products-grid-general {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Responsive para mantener la usabilidad */
+        @media (max-width: 1024px) {
+            .products-grid-general {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .products-grid-general {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="imagenes/logo.png" alt="CampusShop Logo" class="floating-logo">
+                <a href="index.html">
+                    <h1>Campus<span>Shop</span></h1>
+                </a>
+            </div>
+
+            <div class="nav-search">
+                <form action="#" class="search-form">
+                    <img src="imagenes/lupa.png" alt="Buscar" class="search-icon" width="18">
+                    <input type="text" placeholder="¿Qué estás buscando hoy?" name="search">
+                </form>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="carrito.html" class="nav-icon-btn">Carrito 🛒<span class="badge-count">0</span></a></li>
+                <li>
+                    <a href="perfil.html" class="nav-profile-link">
+                        <img src="imagenes/perfil.png" alt="Perfil" class="nav-avatar">
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured-products">
+        <h2 class="section-title">Catálogo <span>General</span></h2>
+
+        <div class="products-grid-general">
+
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camiseta.png" alt="C1"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Camiseta Essential Fit</h3>
+                    <p class="product-price">Q125.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camisetav.png" alt="C2"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Camiseta V-Neck Classic</h3>
+                    <p class="product-price">Q110.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camiseta-oversize.png" alt="C3"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Camiseta Oversize Urban</h3>
+                    <p class="product-price">Q145.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camiseta-polo.png" alt="C4"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Polo Premium Campus</h3>
+                    <p class="product-price">Q160.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camiseta-deportiva.png" alt="C5"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Camiseta Tech Performance</h3>
+                    <p class="product-price">Q135.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camiseta-manga-larga.png" alt="C6"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Camiseta Long Sleeve Basic</h3>
+                    <p class="product-price">Q150.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camiseta-grafica.png" alt="C7"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Camiseta Graphic Edition</h3>
+                    <p class="product-price">Q130.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camiseta-vintage.png" alt="C8"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Camiseta Retro Campus</h3>
+                    <p class="product-price">Q140.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camiseta-slim.png" alt="C9"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Camiseta Slim Fit Cotton</h3>
+                    <p class="product-price">Q115.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/camiseta-unisex.png" alt="C10"><span
+                        class="product-tag">Camisetas</span></div>
+                <div class="product-info">
+                    <h3>Camiseta Unisex Comfort</h3>
+                    <p class="product-price">Q120.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/jeans.png" alt="P1"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Jeans Denim Indigo</h3>
+                    <p class="product-price">Q250.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/pantalon-chino.png" alt="P2"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Pantalón Chino Khaki</h3>
+                    <p class="product-price">Q225.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/jogger-urban.png" alt="P3"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Jogger Urban Grey</h3>
+                    <p class="product-price">Q185.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/cargo-black.png" alt="P4"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Pantalón Cargo Tactical</h3>
+                    <p class="product-price">Q275.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/short-denim.png" alt="P5"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Short Denim Summer</h3>
+                    <p class="product-price">Q150.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/pantalon-formal.png" alt="P6"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Pantalón Formal Slim Fit</h3>
+                    <p class="product-price">Q310.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/jeans-black.png" alt="P7"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Black Midnight Jeans</h3>
+                    <p class="product-price">Q260.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/pantalon-lino.png" alt="P8"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Pantalón de Lino Fresh</h3>
+                    <p class="product-price">Q240.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/jogger-sport.png" alt="P9"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Jogger Sport Performance</h3>
+                    <p class="product-price">Q195.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/jeans-ripped.png" alt="P10"><span
+                        class="product-tag">Pantalones</span></div>
+                <div class="product-info">
+                    <h3>Ripped Street Jeans</h3>
+                    <p class="product-price">Q280.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestidog.png" alt="V1"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Vestido Gala Velvet</h3>
+                    <p class="product-price">Q350.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestido-floral.png" alt="V2"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Vestido Garden Floral</h3>
+                    <p class="product-price">Q225.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestido-midi.png" alt="V3"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Vestido Midi Minimal</h3>
+                    <p class="product-price">Q195.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestido-cocktail.png" alt="V4"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Vestido Cocktail Night</h3>
+                    <p class="product-price">Q290.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestido-denim.png" alt="V5"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Vestido Denim Urban</h3>
+                    <p class="product-price">Q180.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestido-boho.png" alt="V6"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Vestido Boho Chic</h3>
+                    <p class="product-price">Q215.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestido-saten.png" alt="V7"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Vestido Silk Satin</h3>
+                    <p class="product-price">Q320.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestido-knit.png" alt="V8"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Vestido Knit Soft</h3>
+                    <p class="product-price">Q245.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestido-maxi.png" alt="V9"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Maxi Vestido Summer</h3>
+                    <p class="product-price">Q275.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/vestido-lbd.png" alt="V10"><span
+                        class="product-tag">Vestidos</span></div>
+                <div class="product-info">
+                    <h3>Classic Little Black Dress</h3>
+                    <p class="product-price">Q165.00</p><button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/hoodie.png" alt="S1"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Hoodie ForceTech 2026</h3>
+                    <p class="product-price">Q195.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/hoodie-o.png" alt="S2"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Sudadero Oversize Grey</h3>
+                    <p class="product-price">Q225.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sudadero-hoodie.png" alt="S3"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Hoodie Classic Comfort</h3>
+                    <p class="product-price">Q195.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sudadero-zip.png" alt="S4"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Zip-Up Urban Jacket</h3>
+                    <p class="product-price">Q250.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sudadero-oversize.png" alt="S5"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Oversize Street Hoodie</h3>
+                    <p class="product-price">Q225.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sudadero-crop.png" alt="S6"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Crop Top Hoodie Style</h3>
+                    <p class="product-price">Q175.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sudadero-tech.png" alt="S7"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Cyber-Tech Fleece</h3>
+                    <p class="product-price">Q310.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sudadero-vintage.png" alt="S8"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Retro Campus Sweat</h3>
+                    <p class="product-price">Q210.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sudadero-bicolor.png" alt="S9"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Dual-Tone Active</h3>
+                    <p class="product-price">Q240.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sudadero-minimal.png" alt="S10"><span
+                        class="product-tag">Sudaderos</span></div>
+                <div class="product-info">
+                    <h3>Minimalist Crewneck</h3>
+                    <p class="product-price">Q180.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sneakers.png" alt="Z1"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Sneakers Urban White</h3>
+                    <p class="product-price">Q420.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/botas.png" alt="Z2"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Botas Cuero Tabaco</h3>
+                    <p class="product-price">Q550.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/botas-cuero.png" alt="Z3"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Botas Chelsea Leather</h3>
+                    <p class="product-price">Q580.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sandalias-summer.png" alt="Z4"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Sandalias Comfort</h3>
+                    <p class="product-price">Q120.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/mocasines.png" alt="Z5"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Mocasines Brown</h3>
+                    <p class="product-price">Q390.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/zapatos-gala.png" alt="Z6"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Oxford Executive</h3>
+                    <p class="product-price">Q525.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/sneakers-white.png" alt="Z7"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Minimalist White</h3>
+                    <p class="product-price">Q295.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/botines-urban.png" alt="Z8"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Botines Urban Street</h3>
+                    <p class="product-price">Q420.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/zapatos-canvas.png" alt="Z9"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Canvas Casual</h3>
+                    <p class="product-price">Q180.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/zapatos-trekking.png" alt="Z10"><span
+                        class="product-tag">Zapatos</span></div>
+                <div class="product-info">
+                    <h3>Adventure Trekking</h3>
+                    <p class="product-price">Q650.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/pulsera.png" alt="A1"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Pulsera de Plata</h3>
+                    <p class="product-price">Q210.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/gorra.png" alt="A2"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Gorra Campus Sport</h3>
+                    <p class="product-price">Q85.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/lentes-sol.png" alt="A3"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Lentes Retro Vision</h3>
+                    <p class="product-price">Q180.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/mochila-tech.png" alt="A4"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Mochila Tech Pro</h3>
+                    <p class="product-price">Q325.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/billetera-cuero.png" alt="A5"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Billetera Classic</h3>
+                    <p class="product-price">Q110.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/bufanda-winter.png" alt="A6"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Bufanda Knit Cozy</h3>
+                    <p class="product-price">Q75.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/cinto-formal.png" alt="A7"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Cinturón Executive</h3>
+                    <p class="product-price">Q130.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/audifonos-pro.png" alt="A8"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Audífonos Wireless</h3>
+                    <p class="product-price">Q450.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/anillo-silver.png" alt="A9"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Anillo Silver</h3>
+                    <p class="product-price">Q85.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="imagenes/calcetines-pack.png" alt="A10"><span
+                        class="product-tag">Accesorios</span></div>
+                <div class="product-info">
+                    <h3>Pack x3 Calcetines</h3>
+                    <p class="product-price">Q60.00</p><button class="btn-add">Agregar</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
