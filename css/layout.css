@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
     background-color: var(--clr-bg);
     color: var(--clr-dark);
     line-height: 1.6000;
@@ -71,10 +71,11 @@ ul {
 }
 
 .nav-logo h1 {
+    font-family: 'Fredoka', sans-serif;
     font-size: 1.6000rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--clr-dark);
-    letter-spacing: -1.0000px;
+    letter-spacing: -0.5000px;
     margin: 0;
     line-height: 1.0000;
     white-space: nowrap;
@@ -125,6 +126,7 @@ ul {
     border: none;
     outline: none;
     background: transparent;
+    font-family: 'Quicksand', sans-serif;
     font-size: 0.9000rem;
     color: var(--clr-dark);
 }
@@ -137,13 +139,14 @@ ul {
 }
 
 .nav-links a {
-    font-weight: 600;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
     font-size: 0.9200rem;
     color: var(--clr-dark);
     display: flex;
     align-items: center;
     gap: 6.0000px;
-    position: relative; /* Necesario para la línea inferior */
+    position: relative;
 }
 
 .nav-links a:hover {
@@ -153,7 +156,7 @@ ul {
 /* INDICADOR DE PÁGINA ACTUAL (Línea violeta) */
 .nav-links a.active {
     color: var(--clr-main) !important;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .nav-links a.active::after {
@@ -177,8 +180,9 @@ ul {
 .badge-count {
     background-color: var(--clr-main);
     color: var(--clr-white);
+    font-family: 'Fredoka', sans-serif;
     font-size: 0.6500rem;
-    font-weight: 800;
+    font-weight: 700;
     padding: 2.0000px 6.0000px;
     border-radius: 50.0000px;
 }
@@ -252,6 +256,7 @@ ul {
 }
 
 .category-item span {
+    font-family: 'Fredoka', sans-serif;
     font-size: 0.9000rem;
     font-weight: 600;
     color: var(--clr-dark);
@@ -276,14 +281,18 @@ ul {
 }
 
 .section-title {
-    font-size: 1.8000rem;
+    font-family: 'Meow Script', cursive;
+    font-size: 3.2000rem; 
     color: var(--clr-dark);
     margin-bottom: 2.0000rem;
     text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.0000px;
 }
 
 .section-title span {
     color: var(--clr-main);
+    text-shadow: 1.0000px 1.0000px 2.0000px rgba(97, 61, 193, 0.1000);
 }
 
 .products-grid {
@@ -332,8 +341,9 @@ ul {
     left: 15.0000px;
     background-color: var(--clr-main);
     color: var(--clr-white);
+    font-family: 'Fredoka', sans-serif;
     font-size: 0.7500rem;
-    font-weight: 700;
+    font-weight: 600;
     padding: 5.0000px 12.0000px;
     border-radius: 20.0000px;
     z-index: 10;
@@ -349,13 +359,16 @@ ul {
 }
 
 .product-info h3 {
+    font-family: 'Fredoka', sans-serif;
     font-size: 1.1000rem;
+    font-weight: 600;
     margin-bottom: 0.5000rem;
     color: var(--clr-dark);
 }
 
 .product-price {
-    font-weight: 800;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
     color: var(--clr-main);
     font-size: 1.2500rem;
     margin-bottom: 1.2000rem;
@@ -368,7 +381,8 @@ ul {
     border: none;
     padding: 12.0000px 20.0000px;
     border-radius: 8.0000px;
-    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
     cursor: pointer;
     width: 100.0000%;
     transition: var(--transition);

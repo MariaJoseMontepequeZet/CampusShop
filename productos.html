@@ -11,17 +11,22 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Meow+Script&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
 
     <style>
-        /* Cuadrícula solicitada: 5 columnas */
         .products-grid-general {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
             padding: 20px;
         }
 
-        /* Responsive para mantener la usabilidad */
         @media (max-width: 1024px) {
             .products-grid-general {
                 grid-template-columns: repeat(3, 1fr);
