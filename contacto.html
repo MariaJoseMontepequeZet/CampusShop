@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Contacto</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none; color:inherit;">
+                    <h1>Campus<span>Shop</span></h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="perfil.html">Mi Perfil</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-grid">
+
+            <section class="contact-info">
+                <h2>Ponte en contacto</h2>
+                <p>¿Tienes dudas sobre las tallas de nuestra colección o el estado de tu envío? Nuestro equipo de
+                    atención está listo para ayudarte.</p>
+
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <div>
+                        <h4>Oficina Central</h4>
+                        <p>Edificio CIT, 3er Nivel, Oficina 305-B.<br>Ciudad Universitaria, Zona 12. Guatemala.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <div>
+                        <h4>Correo Electrónico</h4>
+                        <p>ayuda@campusshop.com.gt</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="icon">⏰</span>
+                    <div>
+                        <h4>Horario de Atención</h4>
+                        <p>Lunes a Viernes: 08:00 AM - 17:30 PM<br>Sábados: 09:00 AM - 12:30 PM</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <div>
+                        <h4>Línea Directa</h4>
+                        <p>+(502) 2200-4500</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-form-card">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivo">Motivo de contacto</label>
+                        <select id="motivo" required>
+                            <option value="">Selecciona un motivo</option>
+                            <option value="entrega">Consulta sobre mi pedido</option>
+                            <option value="talla">Dudas sobre tallas o productos</option>
+                            <option value="pago">Problemas con el pago</option>
+                            <option value="sugerencia">Sugerencias y comentarios</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Descripción</label>
+                        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje detalladamente..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-send">Enviar mensaje</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
