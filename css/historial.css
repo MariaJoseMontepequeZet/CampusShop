@@ -1,0 +1,116 @@
+/* Contenedor de Historial */
+.history-container {
+    max-width: 850.00px;
+    margin: 40.00px auto;
+    padding: 20.00px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.history-header {
+    margin-bottom: 30.00px;
+}
+
+.history-header h2 {
+    color: #2d4343;
+    font-size: 1.60rem;
+    margin: 0;
+}
+
+/* Tarjeta de Pedido */
+.order-card {
+    background: #ffffff;
+    border-radius: 15.00px;
+    border: 1.50px solid #eeeeee;
+    padding: 20.00px;
+    margin-bottom: 20.00px;
+    transition: transform 0.20s;
+}
+
+.order-card:hover {
+    border-color: #2d4343;
+}
+
+/* Encabezado de la Tarjeta */
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15.00px;
+    border-bottom: 1.00px solid #f5f5f5;
+    margin-bottom: 15.00px;
+}
+
+.order-meta h3 {
+    margin: 0;
+    font-size: 1.00rem;
+    color: #333333;
+}
+
+.order-meta span {
+    font-size: 0.85rem;
+    color: #888888;
+}
+
+/* Badge de Estados */
+.status-badge {
+    padding: 5.00px 12.00px;
+    border-radius: 20.00px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.delivered { background: #e6f7ed; color: #27ae60; }
+.shipped { background: #e3f2fd; color: #2196f3; }
+.processing { background: #fff8e1; color: #f39c12; }
+
+/* Detalles del Pedido en la Card */
+.order-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-items-preview {
+    display: flex;
+    gap: 10.00px;
+}
+
+.order-items-preview img {
+    width: 50.00px;
+    height: 50.00px;
+    border-radius: 8.00px;
+    object-fit: cover;
+    border: 1.00px solid #f0f0f0;
+}
+
+.order-total-info {
+    text-align: right;
+}
+
+.order-total-info .total-amount {
+    display: block;
+    font-weight: 700;
+    font-size: 1.10rem;
+    color: #2d4343;
+}
+
+/* Botón Ver Detalles */
+.btn-order-detail {
+    background: none;
+    border: 1.50px solid #2d4343;
+    color: #2d4343;
+    padding: 8.00px 15.00px;
+    border-radius: 8.00px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-top: 15.00px;
+    transition: all 0.30s;
+}
+
+.btn-order-detail:hover {
+    background: #2d4343;
+    color: #ffffff;
+}
