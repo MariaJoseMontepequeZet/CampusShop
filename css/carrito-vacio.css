@@ -1,0 +1,101 @@
+/* Contenedor Principal de Carrito Vacío */
+.empty-cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80.00px); /* Ajustado según el alto de tu header */
+    padding: 20.00px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.empty-cart-content {
+    max-width: 450.00px;
+    background: #ffffff;
+    padding: 40.00px;
+    border-radius: 20.00px;
+    box-shadow: 0 5.00px 20.00px rgba(0,0,0,0.05);
+}
+
+/* Ilustración Mockup con CSS */
+.empty-illustration {
+    margin-bottom: 30.00px;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-circle {
+    width: 120.00px;
+    height: 120.00px;
+    background: #f0f4f4;
+    border-radius: 50.00%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-icon {
+    font-size: 3.50rem;
+    filter: grayscale(1.00);
+    opacity: 0.60;
+}
+
+.plus-sign {
+    position: absolute;
+    bottom: 10.00px;
+    right: 10.00px;
+    background: #2d4343;
+    color: white;
+    width: 30.00px;
+    height: 30.00px;
+    border-radius: 50.00%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.20rem;
+    border: 3.00px solid #ffffff;
+}
+
+/* Tipografía */
+.empty-cart-content h2 {
+    color: #2d4343;
+    font-size: 1.80rem;
+    margin-bottom: 15.00px;
+}
+
+.empty-cart-content p {
+    color: #888888;
+    font-size: 1.00rem;
+    line-height: 1.50;
+    margin-bottom: 30.00px;
+}
+
+/* Botón de Retorno */
+.btn-back-to-shop {
+    display: inline-block;
+    background-color: #2d4343;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15.00px 30.00px;
+    border-radius: 12.00px;
+    font-weight: 700;
+    font-size: 1.00rem;
+    transition: transform 0.30s, background-color 0.30s;
+}
+
+.btn-back-to-shop:hover {
+    background-color: #1e2d2d;
+    transform: translateY(-3.00px);
+}
+
+/* Animación simple */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10.00px); }
+}
+
+.cart-circle {
+    animation: bounce 3.00s ease-in-out infinite;
+}
