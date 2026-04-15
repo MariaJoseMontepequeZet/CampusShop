@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Configuración</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/ajustes.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none; color:inherit;"><h1>Campus<span>Shop</span></h1></a>
+            </div>
+            <div class="nav-links">
+                <a href="perfil.html">← Mi Perfil</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="settings-container">
+        <aside class="settings-nav">
+            <ul>
+                <li class="active">General</li>
+                <li>Seguridad</li>
+                <li>Notificaciones</li>
+                <li>Privacidad</li>
+            </ul>
+        </aside>
+
+        <section class="settings-panel">
+            <h2>Configuración General</h2>
+
+            <div class="settings-row">
+                <div class="setting-info">
+                    <h4>Correo electrónico</h4>
+                    <p>mjose.montepeque@campus.edu.gt</p>
+                </div>
+                <button class="btn-settings-action">Cambiar</button>
+            </div>
+
+            <div class="settings-row">
+                <div class="setting-info">
+                    <h4>Contraseña</h4>
+                    <p>Actualizada hace 3 meses</p>
+                </div>
+                <button class="btn-settings-action">Actualizar</button>
+            </div>
+
+            <div class="settings-row">
+                <div class="setting-info">
+                    <h4>Autenticación de dos factores</h4>
+                    <p>Añade una capa extra de seguridad a tu cuenta.</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="settings-row">
+                <div class="setting-info">
+                    <h4>Notificaciones de pedidos</h4>
+                    <p>Recibir alertas sobre el estado de mis envíos.</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="settings-row">
+                <div class="setting-info">
+                    <h4>Newsletter</h4>
+                    <p>Recibir ofertas exclusivas en mi correo.</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

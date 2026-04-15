@@ -1,0 +1,154 @@
+/* Contenedor de Ajustes */
+.settings-container {
+    max-width: 900.00px;
+    margin: 40.00px auto;
+    padding: 20.00px;
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    grid-template-columns: 1.00fr; /* Mobile-first */
+    gap: 30.00px;
+}
+
+@media (min-width: 768.00px) {
+    .settings-container {
+        grid-template-columns: 250.00px 1.00fr; /* Sidebar en desktop */
+    }
+}
+
+/* Menú Lateral de Navegación */
+.settings-nav {
+    background: #ffffff;
+    padding: 20.00px;
+    border-radius: 15.00px;
+    height: fit-content;
+    box-shadow: 0 4.00px 12.00px rgba(0,0,0,0.05);
+}
+
+.settings-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.settings-nav li {
+    padding: 12.00px 15.00px;
+    border-radius: 8.00px;
+    margin-bottom: 5.00px;
+    cursor: pointer;
+    transition: background 0.30s;
+    font-weight: 600;
+    color: #555555;
+}
+
+.settings-nav li.active {
+    background: #2d4343;
+    color: #ffffff;
+}
+
+.settings-nav li:hover:not(.active) {
+    background: #f0f4f4;
+}
+
+/* Paneles de Contenido */
+.settings-panel {
+    background: #ffffff;
+    padding: 30.00px;
+    border-radius: 20.00px;
+    box-shadow: 0 4.00px 15.00px rgba(0,0,0,0.05);
+}
+
+.settings-panel h2 {
+    margin-top: 0;
+    margin-bottom: 25.00px;
+    color: #2d4343;
+    font-size: 1.40rem;
+    border-bottom: 1.50px solid #f0f0f0;
+    padding-bottom: 10.00px;
+}
+
+/* Filas de Configuración */
+.settings-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20.00px 0;
+    border-bottom: 1.00px solid #f9f9f9;
+}
+
+.settings-row:last-child {
+    border-bottom: none;
+}
+
+.setting-info h4 {
+    margin: 0;
+    font-size: 1.00rem;
+    color: #333333;
+}
+
+.setting-info p {
+    margin: 5.00px 0 0;
+    font-size: 0.85rem;
+    color: #888888;
+}
+
+/* Switch Estilizado (Checkbox) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45.00px;
+    height: 24.00px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .40s;
+    border-radius: 24.00px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18.00px;
+    width: 18.00px;
+    left: 3.00px;
+    bottom: 3.00px;
+    background-color: white;
+    transition: .40s;
+    border-radius: 50.00%;
+}
+
+input:checked + .slider {
+    background-color: #2d4343;
+}
+
+input:checked + .slider:before {
+    transform: translateX(21.00px);
+}
+
+/* Botones de acción en ajustes */
+.btn-settings-action {
+    background: none;
+    border: 1.50px solid #2d4343;
+    color: #2d4343;
+    padding: 8.00px 15.00px;
+    border-radius: 8.00px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.30s;
+}
+
+.btn-settings-action:hover {
+    background: #2d4343;
+    color: #ffffff;
+}
