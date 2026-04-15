@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,22 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/carrito.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Meow+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Meow+Script&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <header class="main-header">
         <nav class="navbar">
             <div class="nav-logo">
-                <a href="productos.html" style="text-decoration:none; color:inherit;"><h1>Campus<span>Shop</span></h1></a>
+                <a href="productos.html" style="text-decoration:none; color:inherit;">
+                    <h1>Campus<span>Shop</span></h1>
+                </a>
             </div>
             <h2 style="font-family:'Quicksand'; font-size:1.20rem;">Mi Carrito</h2>
             <div class="nav-links">
@@ -30,7 +36,7 @@
 
     <main class="cart-container">
         <section class="cart-items-list">
-            
+
             <div class="cart-item">
                 <img src="imagenes/camiseta-polo.png" alt="Polo" class="cart-item-img">
                 <div class="cart-item-info">
@@ -64,25 +70,33 @@
         </section>
 
         <aside class="cart-summary">
-            <h2 style="margin-bottom: 20.00px;">Resumen</h2>
+            <h2 style="margin-bottom: 25.00px;">Resumen total</h2>
+
             <div class="summary-row">
-                <span>Subtotal (2 productos)</span>
+                <span>Subtotal</span>
                 <span>Q280.00</span>
             </div>
+
             <div class="summary-row">
                 <span>Envío</span>
                 <span style="color: #2ecc71;">Gratis</span>
             </div>
+
             <div class="summary-row summary-total">
                 <span>Total</span>
                 <span>Q280.00</span>
             </div>
-            <button class="btn-checkout">Continuar al pago</button>
-            <p style="font-size:0.80rem; color:#888888; text-align:center; margin-top:15.00px;">
-                Impuestos incluidos calculados al finalizar.
+
+            <a href="pago.html" style="text-decoration: none;">
+                <button class="btn-checkout">Proceder al pago</button>
+            </a>
+
+            <p style="font-size: 0.85rem; color: #888888; text-align: center; margin-top: 20.00px;">
+                * Los cambios en las cantidades requieren actualizar el carrito para ver el nuevo total.
             </p>
         </aside>
     </main>
 
 </body>
+
 </html>

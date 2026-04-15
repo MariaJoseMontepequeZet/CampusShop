@@ -1,0 +1,108 @@
+/* Contenedor Principal */
+.profile-container {
+    max-width: 800.00px;
+    margin: 40.00px auto;
+    padding: 20.00px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Tarjeta de Identidad */
+.profile-header {
+    background: #ffffff;
+    padding: 40.00px;
+    border-radius: 20.00px;
+    text-align: center;
+    box-shadow: 0 4.00px 20.00px rgba(0,0,0,0.05);
+    margin-bottom: 30.00px;
+}
+
+.profile-avatar {
+    width: 120.00px;
+    height: 120.00px;
+    background: #f0f4f4;
+    border-radius: 50.00%;
+    margin: 0 auto 15.00px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.00rem;
+    color: #2d4343;
+    border: 3.00px solid #2d4343;
+}
+
+.profile-info h2 {
+    margin: 10.00px 0 5.00px;
+    color: #2d4343;
+    font-size: 1.60rem;
+}
+
+.profile-info p {
+    color: #888888;
+    font-size: 0.95rem;
+}
+
+/* Grid de Enlaces de Gestión */
+.profile-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220.00px, 1.00fr));
+    gap: 20.00px;
+}
+
+.menu-card {
+    background: #ffffff;
+    padding: 25.00px;
+    border-radius: 15.00px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12.00px;
+    transition: transform 0.30s, box-shadow 0.30s;
+    border: 1.00px solid #f0f0f0;
+    text-align: center;
+}
+
+.menu-card:hover {
+    transform: translateY(-5.00px);
+    box-shadow: 0 10.00px 25.00px rgba(0,0,0,0.08);
+    border-color: #2d4343;
+}
+
+.menu-card .icon {
+    font-size: 1.80rem;
+}
+
+.menu-card h3 {
+    margin: 0;
+    font-size: 1.10rem;
+    color: #2d4343;
+}
+
+.menu-card p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #777777;
+}
+
+/* Botón Cerrar Sesión */
+.logout-section {
+    margin-top: 40.00px;
+    text-align: center;
+}
+
+.btn-logout {
+    background: #ffeded;
+    color: #e74c3c;
+    border: none;
+    padding: 12.00px 30.00px;
+    border-radius: 10.00px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.30s;
+}
+
+.btn-logout:hover {
+    background: #ffd6d6;
+}

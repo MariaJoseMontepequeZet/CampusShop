@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Checkout</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none; color:inherit;">
+                    <h1>Campus<span>Shop</span></h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="carrito.html">← Volver al carrito</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-container">
+        
+        <div class="checkout-forms">
+            <form action="#">
+                <section class="checkout-section">
+                    <h2>Envío</h2>
+                    <div class="form-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" placeholder="Ingresa tu nombre completo" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Dirección</label>
+                        <input type="text" placeholder="Ingresa tu dirección" autocomplete="address-line1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Ciudad</label>
+                        <input type="text" placeholder="Tu ciudad" autocomplete="address-level2" required>
+                    </div>
+                </section>
+
+                <section class="checkout-section">
+                    <h2>Método de Pago</h2>
+                    
+                    <div class="payment-methods-grid">
+                        <label class="method-option">
+                            <input type="radio" name="pay-method" checked>
+                            <div class="method-box">
+                                <span class="icon">💳</span>
+                                <span>Tarjeta</span>
+                            </div>
+                        </label>
+                        <label class="method-option">
+                            <input type="radio" name="pay-method">
+                            <div class="method-box">
+                                <span class="icon">🅿️</span>
+                                <span>PayPal</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Número de Tarjeta</label>
+                        <input type="text" placeholder="0000 0000 0000 0000" maxlength="19" autocomplete="cc-number" required>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Vencimiento (MM / YY)</label>
+                            <div class="expiry-inputs">
+                                <input type="text" placeholder="MM" maxlength="2" pattern="\d{2}" required>
+                                <span class="separator">/</span>
+                                <input type="text" placeholder="YY" maxlength="2" pattern="\d{2}" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>CVC</label>
+                            <input type="password" placeholder="123" maxlength="4" autocomplete="off" required>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+
+        <aside class="order-summary-sidebar">
+            <h2>Resumen de tu Orden</h2>
+            
+            <div class="mini-product-list">
+                <div class="mini-item">
+                    <img src="imagenes/camiseta-polo.png" alt="Polo Premium">
+                    <div class="mini-item-info">
+                        <h4>Polo Premium Campus</h4>
+                        <p>Cantidad: 1 • Q150.00</p>
+                    </div>
+                </div>
+                <div class="mini-item">
+                    <img src="imagenes/billetera-cuero.png" alt="Billetera">
+                    <div class="mini-item-info">
+                        <h4>Billetera de Cuero</h4>
+                        <p>Cantidad: 1 • Q130.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-details">
+                <div class="total-row grand-total">
+                    <span>Total</span>
+                    <span>Q280.00</span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-pay-now">Pagar Q280.00</button>
+            
+            <div class="security-badge">
+                <span>🔒 Pago 100.00% seguro y cifrado</span>
+            </div>
+        </aside>
+
+    </main>
+
+</body>
+</html>
