@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Camiseta Essential Fit</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/producto-detalle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="camisetas.html" style="text-decoration:none; color:inherit;">← Regresar</a>
+            </div>
+            <h2 style="font-family:'Quicksand'; font-size:1.20rem;">Detalles del Producto</h2>
+            <div class="nav-links">
+                <a href="carrito.html">🛒</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-single-container">
+            <div class="product-visual">
+                <img src="imagenes/camiseta.png" alt="Camiseta Essential Fit">
+            </div>
+
+            <div class="product-details-content">
+                <h1>Camiseta Essential Fit</h1>
+                <p class="price-large">Q125.00</p>
+                
+                <p class="description-text">
+                    Nuestra camiseta Essential Fit redefine la comodidad diaria con su algodón orgánico premium. Un básico indispensable diseñado para durar y mantener su forma.
+                </p>
+
+                <div class="size-selector">
+                    <p>Selecciona tu Talla</p>
+                    <div class="size-options">
+                        <button class="size-btn" onclick="selectSize(this)">S</button>
+                        <button class="size-btn active" onclick="selectSize(this)">M</button>
+                        <button class="size-btn" onclick="selectSize(this)">L</button>
+                        <button class="size-btn" onclick="selectSize(this)">XL</button>
+                    </div>
+                </div>
+
+                <button class="btn-submit-cart">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section class="related-section" style="max-width: 1100.00px; margin: 40.00px auto; padding: 20.00px;">
+            <h2 style="font-family:'Meow Script'; font-size:2.50rem; margin-bottom: 25.00px; text-align: center;">Productos que te encantarán</h2>
+            <div class="products-grid-general" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15.00px;">
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/jogger-sport.png" alt="Jogger Sport">
+                    </div>
+                    <div class="product-info">
+                        <h3>Jogger Sport Performance</h3>
+                        <p class="product-price">Q195.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/sudadero-minimal.png" alt="Minimalist Crewneck">
+                    </div>
+                    <div class="product-info">
+                        <h3>Minimalist Soft Crewneck</h3>
+                        <p class="product-price">Q180.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/zapatos-canvas.png" alt="Zapatos Canvas">
+                    </div>
+                    <div class="product-info">
+                        <h3>Canvas Casual Shoes</h3>
+                        <p class="product-price">Q180.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/anillo-silver.png" alt="Anillo Silver">
+                    </div>
+                    <div class="product-info">
+                        <h3>Anillo Silver</h3>
+                        <p class="product-price">Q85.00</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function selectSize(element) {
+            const buttons = document.querySelectorAll('.size-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

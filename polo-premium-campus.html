@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Polo Premium Campus</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/producto-detalle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="camisetas.html" style="text-decoration:none; color:inherit;">← Regresar</a>
+            </div>
+            <h2 style="font-family:'Quicksand'; font-size:1.2000rem;">Detalles del Producto</h2>
+            <div class="nav-links">
+                <a href="carrito.html">🛒</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-single-container">
+            <div class="product-visual">
+                <img src="imagenes/camiseta-polo.png" alt="Polo Premium Campus">
+            </div>
+
+            <div class="product-details-content">
+                <h1>Polo Premium Campus</h1>
+                <p class="price-large">Q150.0000</p>
+                
+                <p class="description-text">
+                    Sofisticación y confort en una sola prenda. El Polo Premium Campus cuenta con un tejido transpirable y un corte clásico, ideal para destacar con un estilo smart-casual.
+                </p>
+
+                <div class="size-selector">
+                    <p>Selecciona tu Talla</p>
+                    <div class="size-options">
+                        <button class="size-btn" onclick="selectSize(this)">S</button>
+                        <button class="size-btn active" onclick="selectSize(this)">M</button>
+                        <button class="size-btn" onclick="selectSize(this)">L</button>
+                        <button class="size-btn" onclick="selectSize(this)">XL</button>
+                    </div>
+                </div>
+
+                <button class="btn-submit-cart">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section class="related-section" style="max-width: 1100.0000px; margin: 40.0000px auto; padding: 20.0000px;">
+            <h2 style="font-family:'Meow Script'; font-size:2.5000rem; margin-bottom: 25.0000px; text-align: center;">Recomendados para ti</h2>
+            <div class="products-grid-general" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15.0000px;">
+                
+                <div class="product-card">
+                    <div class="product-image"><img src="imagenes/sudadero-minimal.png" alt="Sudadero Minimal"></div>
+                    <div class="product-info">
+                        <h3>Minimalist Soft Crewneck</h3>
+                        <p>Q180.0000</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"><img src="imagenes/jogger-sport.png" alt="Jogger Sport"></div>
+                    <div class="product-info">
+                        <h3>Jogger Sport Performance</h3>
+                        <p>Q195.0000</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"><img src="imagenes/zapatos-canvas.png" alt="Zapatos Canvas"></div>
+                    <div class="product-info">
+                        <h3>Canvas Casual Shoes</h3>
+                        <p>Q180.0000</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/billetera-cuero.png" alt="Billetera">
+                    </div>
+                    <div class="product-info">
+                        <h3>Billetera de Cuero</h3>
+                        <p>Q130.0000</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function selectSize(element) {
+            const buttons = document.querySelectorAll('.size-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

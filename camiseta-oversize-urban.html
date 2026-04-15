@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Camiseta Oversize Urban</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/producto-detalle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="productos.html" style="text-decoration:none; color:inherit;">← Regresar</a>
+            </div>
+            <h2 style="font-family:'Quicksand'; font-size:1.20rem;">Detalles del Producto</h2>
+            <div class="nav-links">
+                <a href="carrito.html">🛒</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-single-container">
+            <div class="product-visual">
+                <img src="imagenes/camiseta-oversize.png" alt="Camiseta Oversize Urban">
+            </div>
+
+            <div class="product-details-content">
+                <h1>Camiseta Oversize Urban</h1>
+                <p class="price-large">Q145.00</p>
+                
+                <p class="description-text">
+                    Nuestra Camiseta Oversize Urban ofrece un estilo relajado con hombros caídos y una silueta amplia. Perfecta para quienes buscan comodidad y tendencia en el campus.
+                </p>
+
+                <div class="size-selector">
+                    <p>Selecciona tu Talla</p>
+                    <div class="size-options">
+                        <button class="size-btn" onclick="selectSize(this)">S</button>
+                        <button class="size-btn active" onclick="selectSize(this)">M</button>
+                        <button class="size-btn" onclick="selectSize(this)">L</button>
+                        <button class="size-btn" onclick="selectSize(this)">XL</button>
+                    </div>
+                </div>
+
+                <button class="btn-submit-cart">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section class="related-section" style="max-width: 1100.00px; margin: 40.00px auto; padding: 20.00px;">
+            <h2 style="font-family:'Meow Script'; font-size:2.50rem; margin-bottom: 25.00px; text-align: center;">Te puede interesar</h2>
+            <div class="products-grid-general" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15.00px;">
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/hoodie.png" alt="Sudadero" style="width:100.00%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sudadero Campus Classic</h3>
+                        <p>Q195.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/audifonos-pro.png" alt="Audífonos" style="width:100.00%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Audífonos Wireless</h3>
+                        <p>Q450.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/calcetines-pack.png" alt="Calcetines" style="width:100.00%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pack x3 Calcetines</h3>
+                        <p>Q60.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/billetera-cuero.png" alt="Billetera" style="width:100.00%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Billetera Classic Leather</h3>
+                        <p>Q110.00</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function selectSize(element) {
+            const buttons = document.querySelectorAll('.size-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
