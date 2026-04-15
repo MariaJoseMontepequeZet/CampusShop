@@ -1,0 +1,106 @@
+/* Contenedor de Direcciones */
+.addresses-container {
+    max-width: 1000.00px;
+    margin: 40.00px auto;
+    padding: 20.00px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.addresses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30.00px;
+}
+
+.addresses-header h2 {
+    color: #2d4343;
+    margin: 0;
+}
+
+/* Botón Añadir Nueva */
+.btn-add-address {
+    background-color: #2d4343;
+    color: white;
+    border: none;
+    padding: 12.00px 20.00px;
+    border-radius: 10.00px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.30s;
+}
+
+.btn-add-address:hover {
+    opacity: 0.90;
+}
+
+/* Grid de Tarjetas */
+.addresses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300.00px, 1.00fr));
+    gap: 20.00px;
+}
+
+.address-card {
+    background: #ffffff;
+    padding: 25.00px;
+    border-radius: 15.00px;
+    border: 1.50px solid #eeeeee;
+    position: relative;
+    transition: border-color 0.30s;
+}
+
+.address-card.default {
+    border-color: #2d4343;
+    background-color: #f0f4f4;
+}
+
+.default-badge {
+    position: absolute;
+    top: 15.00px;
+    right: 15.00px;
+    background: #2d4343;
+    color: white;
+    font-size: 0.70rem;
+    padding: 4.00px 8.00px;
+    border-radius: 5.00px;
+    font-weight: 700;
+}
+
+.address-card h3 {
+    margin: 0 0 10.00px 0;
+    font-size: 1.10rem;
+    color: #333333;
+}
+
+.address-card p {
+    margin: 5.00px 0;
+    font-size: 0.90rem;
+    color: #666666;
+    line-height: 1.40;
+}
+
+/* Acciones de la Tarjeta */
+.address-actions {
+    margin-top: 20.00px;
+    display: flex;
+    gap: 15.00px;
+}
+
+.btn-edit, .btn-delete {
+    background: none;
+    border: none;
+    font-family: 'Quicksand';
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-edit { color: #2d4343; }
+.btn-delete { color: #e74c3c; }
+
+.btn-edit:hover, .btn-delete:hover {
+    text-decoration: underline;
+}
