@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Tu Carrito</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Meow+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="productos.html" style="text-decoration:none; color:inherit;"><h1>Campus<span>Shop</span></h1></a>
+            </div>
+            <h2 style="font-family:'Quicksand'; font-size:1.20rem;">Mi Carrito</h2>
+            <div class="nav-links">
+                <a href="productos.html">Seguir Comprando</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <section class="cart-items-list">
+            
+            <div class="cart-item">
+                <img src="imagenes/camiseta-polo.png" alt="Polo" class="cart-item-img">
+                <div class="cart-item-info">
+                    <h3>Polo Premium Campus</h3>
+                    <p>Talla: M</p>
+                    <p>Q150.00</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <button class="size-btn" style="width:25.00px; height:25.00px;">-</button>
+                    <div class="qty-box">1</div>
+                    <button class="size-btn" style="width:25.00px; height:25.00px;">+</button>
+                </div>
+                <p style="font-weight:700;">Q150.00</p>
+            </div>
+
+            <div class="cart-item">
+                <img src="imagenes/billetera-cuero.png" alt="Billetera" class="cart-item-img">
+                <div class="cart-item-info">
+                    <h3>Billetera de Cuero</h3>
+                    <p>Color: Café</p>
+                    <p>Q130.00</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <button class="size-btn" style="width:25.00px; height:25.00px;">-</button>
+                    <div class="qty-box">1</div>
+                    <button class="size-btn" style="width:25.00px; height:25.00px;">+</button>
+                </div>
+                <p style="font-weight:700;">Q130.00</p>
+            </div>
+
+        </section>
+
+        <aside class="cart-summary">
+            <h2 style="margin-bottom: 20.00px;">Resumen</h2>
+            <div class="summary-row">
+                <span>Subtotal (2 productos)</span>
+                <span>Q280.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Envío</span>
+                <span style="color: #2ecc71;">Gratis</span>
+            </div>
+            <div class="summary-row summary-total">
+                <span>Total</span>
+                <span>Q280.00</span>
+            </div>
+            <button class="btn-checkout">Continuar al pago</button>
+            <p style="font-size:0.80rem; color:#888888; text-align:center; margin-top:15.00px;">
+                Impuestos incluidos calculados al finalizar.
+            </p>
+        </aside>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Contenedor Principal del Carrito */
+.cart-container {
+    max-width: 1000.00px;
+    margin: 50.00px auto;
+    padding: 20.00px;
+    display: grid;
+    grid-template-columns: 1.00fr 350.00px;
+    gap: 30.00px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Lista de Productos */
+.cart-items-list {
+    background: #ffffff;
+    border-radius: 15.00px;
+    padding: 20.00px;
+    box-shadow: 0 4.00px 15.00px rgba(0,0,0,0.05);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15.00px 0;
+    border-bottom: 1.00px solid #eeeeee;
+}
+
+.cart-item:last-child { 
+    border-bottom: none; 
+}
+
+.cart-item-img {
+    width: 80.00px;
+    height: 80.00px;
+    border-radius: 10.00px;
+    background: #f9f9f9;
+    object-fit: contain;
+    margin-right: 20.00px;
+}
+
+.cart-item-info { 
+    flex-grow: 1.00; 
+}
+
+.cart-item-info h3 { 
+    font-size: 1.10rem; 
+    margin-bottom: 5.00px; 
+}
+
+.cart-item-info p { 
+    color: #888888; 
+    font-size: 0.90rem; 
+}
+
+/* Control de Cantidad */
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10.00px;
+    margin: 0 30.00px;
+}
+
+.qty-box {
+    width: 35.00px;
+    height: 35.00px;
+    border: 1.00px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5.00px;
+    font-weight: 600;
+}
+
+/* Resumen del Pedido (Aside) */
+.cart-summary {
+    background: #fcfcfc;
+    border: 1.00px solid #eeeeee;
+    border-radius: 15.00px;
+    padding: 25.00px;
+    height: fit-content;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15.00px;
+    font-size: 1.05rem;
+}
+
+.summary-total {
+    border-top: 2.00px solid #2d4343;
+    padding-top: 15.00px;
+    margin-top: 15.00px;
+    font-weight: 700;
+    font-size: 1.30rem;
+}
+
+/* Botón de Pago */
+.btn-checkout {
+    width: 100.00%;
+    background: #2d4343;
+    color: white;
+    border: none;
+    padding: 15.00px;
+    border-radius: 10.00px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20.00px;
+    transition: opacity 0.30s;
+}
+
+.btn-checkout:hover { 
+    opacity: 0.90; 
+}
+
+/* Responsive */
+@media (max-width: 850.00px) {
+    .cart-container { 
+        grid-template-columns: 1.00fr; 
+    }
+}
