@@ -61,7 +61,7 @@ El código se ha organizado de forma modular para facilitar su edición:
 | :--- | :--- | :--- |
 | `index.html` | Catálogo principal de productos | `layout.css` |
 | `perfil.html` | Panel de control del usuario | `perfil.css` |
-| `pago.html` | Pasarela de pago y resumen de orden | `checkout.css` |
+| `checkout.html` | Pasarela de pago y resumen de orden | `checkout.css` |
 | `historial.html` | Registro histórico de compras | `historial.css` |
 | `contacto.html` | Formulario de ayuda al cliente | `contacto.css` |
 | `vacio.html`| Estado de error/vacío del carrito | `carrito.css` |
