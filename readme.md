@@ -69,6 +69,6 @@ El código se ha organizado de forma modular para facilitar su edición:
 ---
 
 ### Especificaciones Técnicas
-* **Precisión Numérica**: Todos los cálculos internos y visualizaciones de moneda se manejan con un formato estricto de **4.0000 decimales** en lógica y **2.00 decimales** en la interfaz de usuario.
+* **Precisión Numérica**: Todos los cálculos internos y visualizaciones de moneda se manejan con un formato estricto de **4.00 decimales** en lógica y **2.00 decimales** en la interfaz de usuario.
 * **Diseño Visual**: Basado en bordes redondeados de **15.00px** para una estética moderna y profesional.
 * **Tipografía**: Implementación de Google Fonts (Quicksand) para mejorar la legibilidad académica.
