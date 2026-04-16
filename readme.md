@@ -45,7 +45,7 @@ Para visualizar y trabajar en este proyecto, necesitas lo siguiente:
 
 2. **Organización de archivos:**
    Asegúrate de mantener la jerarquía de carpetas para que los enlaces y estilos funcionen:
-   * **Raíz**: Archivos `.html` (index, perfil, carrito-vacio, historial, contacto, direcciones, pago).
+   * **Raíz**: Archivos `.html` (index, perfil, vacio, historial, contacto, direcciones, pago).
    * **/css**: Archivos `.css` individuales para cada sección.
    * **/imagenes**: Recursos visuales y logotipos.
 
@@ -64,7 +64,7 @@ El código se ha organizado de forma modular para facilitar su edición:
 | `pago.html` | Pasarela de pago y resumen de orden | `checkout.css` |
 | `historial.html` | Registro histórico de compras | `historial.css` |
 | `contacto.html` | Formulario de ayuda al cliente | `contacto.css` |
-| `carrito-vacio.html`| Estado de error/vacío del carrito | `carrito.css` |
+| `vacio.html`| Estado de error/vacío del carrito | `carrito.css` |
 
 ---
 
