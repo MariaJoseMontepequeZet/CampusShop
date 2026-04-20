@@ -24,6 +24,63 @@ body {
     line-height: 1.6000;
 }
 
+/* --- HEADER ESTRUCTURA --- */
+.main-header {
+    background-color: var(--clr-white);
+    height: 80.00px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.navbar {
+    width: 90.00%;
+    max-width: 1400.00px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20.00px;
+}
+
+/* --- LOGO --- */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10.00px;
+}
+
+.nav-logo a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.6000rem;
+    font-weight: 700;
+    color: var(--clr-dark);
+    letter-spacing: -0.5000px;
+    margin: 0;
+    line-height: 1.00;
+    white-space: nowrap;
+}
+
+.nav-logo span {
+    color: var(--clr-main);
+}
+
+.floating-logo {
+    width: 60.00px;
+    height: 60.00px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: drop-shadow(0 5.00px 10.00px rgba(61, 14, 97, 0.1500));
+}
+
 /* --- BARRA DE BÚSQUEDA --- */
 .nav-search {
     flex: 1.00;
