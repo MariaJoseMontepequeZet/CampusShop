@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Contacto</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/ayuda.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration:none; color:inherit;">
+                    <h1>Campus<span>Shop</span></h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="perfil.html">Mi Perfil</a>
+                <a href="historial.html"> Mi historial</a>
+            </div>
+        </nav>
+
+        <div class="nav-search">
+            <form action="#" class="search-form">
+                <img src="img/lupa.png" alt="Buscar" class="search-icon" width="18">
+                <input type="text" placeholder="¿Qué deseas encontrar?" name="search">
+            </form>
+        </div>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-grid">
+
+            <section class="contact-info">
+                <h1>Preguntas Frecuentes</h1>
+
+                <details>
+                    <summary>¿Qué es CampusShop?</summary>
+                    <p>CampusShop es una plataforma en línea para estudiantes que buscan comprar y vender productos
+                        de manera segura.</p>
+                </details>
+
+                <details>
+                    <summary>¿Cómo puedo registrarme?</summary>
+                    <p>Para registrarte, haz clic en el botón "Registrarse" en la parte superior derecha y completa
+                        el formulario con tus datos.</p>
+                </details>
+
+                <details>
+                    <summary>¿Es seguro realizar transacciones?</summary>
+                    <p>Sí, utilizamos métodos de pago seguros y protegemos tus datos personales con cifrado
+                        avanzado.</p>
+                </details>
+
+                <details>
+                    <summary>¿Qué productos puedo vender?</summary>
+                    <p>Puedes vender libros, dispositivos electrónicos, ropa, y otros artículos relacionados con la
+                        vida estudiantil.</p>
+                </details>
+
+                <details>
+                    <summary>¿Cómo puedo contactar al soporte?</summary>
+                    <p>Puedes contactarnos a través del correo soporte@campusshop.com o mediante el formulario de
+                        contacto en nuestro sitio web.</p>
+                </details>
+            </section>
+
+
+            <section class="contact-form-card">
+                <form action="#">
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">¿No encuentraaas tu problema? Escribenos y te daremos una respuesta
+                            inmediata.</label>
+                        <textarea id="mensaje" rows="4"
+                            placeholder="Escribe tu mensaje detalladamente para poder darte un mejor soporte a tu problema."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-send">Enviar mensaje</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
