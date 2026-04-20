@@ -130,7 +130,7 @@ body {
 .contact-grid {
     display: grid;
     grid-template-columns: 1.00fr;
-    gap: 40.00px;
+    gap: 40px;
 }
 
 @media (min-width: 800.00px) {
