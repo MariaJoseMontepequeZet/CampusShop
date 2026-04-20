@@ -1,0 +1,184 @@
+/* --- VARIABLES DE PALETA --- */
+:root {
+    --clr-main: #613DC1;
+    --clr-accent: #858AE3;
+    --clr-dark: #3D0E61;
+    --clr-sky: #97DFFC;
+    --clr-bg: #F8FAFF;
+    --clr-white: #FFFFFF;
+    --shadow: 0 4.00px 15.00px rgba(61, 14, 97, 0.1000);
+    --radius: 12.00px;
+    --transition: all 0.3000s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+    background-color: var(--clr-bg);
+    color: var(--clr-dark);
+    line-height: 1.6000;
+}
+
+/* --- BARRA DE BÚSQUEDA --- */
+.nav-search {
+    flex: 1.00;
+    max-width: 400.00px;
+    margin: 0 1.5000rem;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: #F0F2F8;
+    padding: 8.00px 16.00px;
+    border-radius: 50.00px;
+    border: 1.5000px solid transparent;
+    transition: var(--transition);
+}
+
+.search-form:focus-within {
+    background-color: var(--clr-white);
+    border-color: var(--clr-main);
+    box-shadow: 0 4.00px 12.00px rgba(97, 61, 193, 0.1000);
+}
+
+.search-icon {
+    margin-right: 10.00px;
+    opacity: 0.7000;
+}
+
+.search-form input {
+    width: 100.00%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9000rem;
+    color: var(--clr-dark);
+}
+
+/* Contenedor de preguntas */
+.contact-container {
+    max-width: 1000.00px;
+    margin: 50.00px auto;
+    padding: 20.00px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.00fr;
+    gap: 40.00px;
+}
+
+@media (min-width: 800.00px) {
+    .contact-grid {
+        grid-template-columns: 1.00fr 1.20fr;
+        align-items: center;
+    }
+}
+
+/* Sección de contacto */
+.contact-info h2 {
+    font-size: 2.20rem;
+    color: #2d4343;
+    margin-bottom: 15.00px;
+}
+
+.contact-info p {
+    color: #666666;
+    margin-bottom: 30.00px;
+    line-height: 1.60;
+}
+
+.info-item {
+    display: flex;
+    gap: 15.00px;
+    margin-bottom: 25.00px;
+}
+
+.info-item .icon {
+    font-size: 1.50rem;
+    background: #f0f4f4;
+    width: 50.00px;
+    height: 50.00px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12.00px;
+}
+
+.info-item h4 {
+    margin: 0;
+    color: #2d4343;
+    font-size: 1.00rem;
+}
+
+.info-item p {
+    margin: 5.00px 0 0;
+    font-size: 0.90rem;
+    color: #888888;
+}
+
+/* Tarjeta del Formulario */
+.contact-form-card {
+    background: #ffffff;
+    padding: 40.00px;
+    border-radius: 20.00px;
+    box-shadow: 0 10.00px 30.00px rgba(0,0,0,0.05);
+    border: 1.00px solid #f0f0f0;
+}
+
+.form-group {
+    margin-bottom: 20.00px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 700;
+    font-size: 0.90rem;
+    margin-bottom: 8.00px;
+    color: #2d4343;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 12.00px;
+    border: 1.50px solid #eeeeee;
+    border-radius: 10.00px;
+    font-family: 'Quicksand';
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.30s;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #2d4343;
+}
+
+/* Botón de Envío */
+.btn-send {
+    width: 100.00%;
+    background: #2d4343;
+    color: white;
+    border: none;
+    padding: 15.00px;
+    border-radius: 10.00px;
+    font-weight: 700;
+    font-size: 1.00rem;
+    cursor: pointer;
+    transition: 0.30s;
+}
+
+.btn-send:hover {
+    background: #1e2d2d;
+}
